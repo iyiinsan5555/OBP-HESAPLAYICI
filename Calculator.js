@@ -284,4 +284,4 @@ Inputs.forEach(Input =>  {
   Input.addEventListener("change", function(event) { CheckNumber(event.target.value); })
 })
 
-setInterval(CalculateObp,5000)
+setInterval(CalculateObp,500)
