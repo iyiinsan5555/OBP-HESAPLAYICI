@@ -281,5 +281,7 @@ function CalculateObpOnButtonClick() {
 
 let Inputs = document.querySelectorAll("input")
 Inputs.forEach(Input =>  {
-  Input.addEventListener("change", function(event) { CheckNumber(event.target.value); CalculateObp(); })
+  Input.addEventListener("change", function(event) { CheckNumber(event.target.value); })
 })
+
+setInterval(CalculateObp,5000)
