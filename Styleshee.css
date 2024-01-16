@@ -1,0 +1,54 @@
+:root {
+    --First_Color: rgb(17, 18, 22);
+    --Second_Color: rgb(43, 45, 51);
+    --Third_Color: rgb(43, 177, 255);
+    --Font_Color: #FFFFFF;
+    background-color: var(--First_Color);
+    color: var(--Font_Color);
+    font-family: "HCo Gotham SSm", Helvetica, Arial, san-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+
+.Ders_Grubu {
+    background-color: rgba(43, 45, 51, 0.2);
+    box-shadow: var(--Second_Color) 0px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    align-self: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.Ders_Notu_Input_Grup {
+    margin-top: 15px;
+    margin-bottom: 15px;    
+}
+
+input {
+    width: 150px;
+    height: 20px;
+    border-radius: 2px;
+    border-style: hidden;  
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+label {
+    margin-right: 15px;
+    display: block;
+}
+
+.Ders_Labeli {
+    margin-top: 10px;
+}
