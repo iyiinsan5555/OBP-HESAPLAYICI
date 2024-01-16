@@ -3,10 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="Styleshee.css" rel="stylesheet">
+        <link href="Stylesheet.css" rel="stylesheet">
         <title>OBP HESAPLAYICI</title>
     </head>
     <body>
+
+        <div class="Center_Div">
+            <h1 class="Title"> OBP HESAPLAYICI</h1>
+        </div>
+
+        <div class="Ortalama_Gösterici">
+            <p id="Ortalama_Baremi">0</p>
+        </div>
 
 
         <div>
@@ -178,7 +186,9 @@
 
             </form>
 
-            <input type="submit" onclick="CalculateObp()">
+            <div class="Submit_Button_Div">
+                <button class="Submit_Button" onclick="CalculateObpOnButtonClick()">Hesapla</button>
+            </div>
 
         </div>
 

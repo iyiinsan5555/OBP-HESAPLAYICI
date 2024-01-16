@@ -52,3 +52,49 @@ label {
 .Ders_Labeli {
     margin-top: 10px;
 }
+
+.Submit_Button_Div {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Submit_Button {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border-style: hidden;
+    width: 45vw;
+    height: 4vh;
+    box-shadow: var(--Second_Color) 0px 0px 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Center_Div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ortalama_Gösterici {
+    position: fixed;
+    left: 5%;
+    top: 50%;
+    width: 10vw;
+    height: 10vh;
+    background-color: rgba(17, 18, 22, 0.75);
+    border-style: hidden;
+    border-radius: 7.5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ortalama_Baremi {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}

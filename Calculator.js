@@ -38,13 +38,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("Kimya ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.Kimya
  }
@@ -54,13 +54,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("Fizik ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.Fizik
 
@@ -71,13 +71,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("Biyoloji ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.Biyoloji
 
@@ -88,13 +88,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("Matematik ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.Matematik
 
@@ -106,13 +106,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("Edebiyat ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.Edebiyat
 
@@ -123,13 +123,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("Tarih ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.Tarih
 
@@ -140,13 +140,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("Felsefe ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.Felsefe
 
@@ -157,13 +157,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("Beden ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.Beden
 
@@ -174,13 +174,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("İngilizce ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.İngilizce
 
@@ -191,13 +191,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("Almanca ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.Almanca
 
@@ -208,13 +208,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("Görsel_Müzik ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.Görsel_Müzik
 
@@ -225,13 +225,13 @@ function CheckNumber(param) {
     let Ders_Toplam = 0
     let Input_Count = 0
     inputs.forEach(function(input) {
-      if (input && Number(input)) {
+      if (input) {
         let value = input.value;
         Ders_Toplam += Number(value)
         Input_Count += 1
       }
     });
-    let Ders_Ortalaması = Ders_Toplam / Input_Count
+    let Ders_Ortalaması = Ders_Toplam / Input_Count || 0
     console.log("Din ortalaması = ", Ders_Ortalaması)
     totalSum += Ders_Ortalaması * Katsayilar.Din
 
@@ -251,13 +251,35 @@ function CheckNumber(param) {
     CalculateMatematik()
     CalculateTarih()
     Calculateİngilizce()
-    console.log(totalSum ,"is total sum", "and this is ortalama=",totalSum/39)
-    alert(totalSum / 39)
-    
+    const Ortalama_Baremi = document.getElementById("Ortalama_Baremi")
+    let number = totalSum / 39
+    Ortalama_Baremi.textContent = number.toFixed(3)
+    console.log("Ortalama_Baremi")
+    console.log(Ortalama_Baremi.innerHTML)
+}
+
+function CalculateObpOnButtonClick() {
+  totalSum = 0
+  CalculateKimya()
+  CalculateAlmanca()
+  CalculateBeden()
+  CalculateBiyoloji()
+  CalculateDin()
+  CalculateEdebiyat()
+  CalculateFelsefe()
+  CalculateFizik()
+  CalculateGörsel_Müzik()
+  CalculateMatematik()
+  CalculateTarih()
+  Calculateİngilizce()
+  const Ortalama_Baremi = document.querySelectorAll("#Ortalama_Baremi")
+  let number = totalSum / 39
+  Ortalama_Baremi.textContent = number.toFixed(3)
+  alert(totalSum / 39)
 }
 
 
 let Inputs = document.querySelectorAll("input")
 Inputs.forEach(Input =>  {
-  Input.addEventListener("change", function(event) { CheckNumber(event.target.value) })
+  Input.addEventListener("change", function(event) { CheckNumber(event.target.value); CalculateObp(); })
 })
