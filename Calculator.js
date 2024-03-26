@@ -21,13 +21,14 @@ const Katsayilar = {
 
 }
 
-function CheckNumber(param) {
+function CheckNumber(param, input) {
   console.log(param);
   const number = Number(param)
   if (number <= 100 && number > 0) {
     return true
   } else {
-    alert("Verdiğiniz numara "+ number + "\n 0 ile 100 arasında bir rakam giriniz")
+    input.value = ""
+    alert("Verdiğiniz numara " + number + "\n 0 ile 100 arasında bir rakam giriniz");
     return false
   }
 
@@ -283,7 +284,7 @@ function CalculateObpOnButtonClick() {
 
 let Inputs = document.querySelectorAll("input")
 Inputs.forEach(Input =>  {
-  Input.addEventListener("change", function(event) { CheckNumber(event.target.value); })
+  Input.addEventListener("change", function(event) { CheckNumber(event.target.value, event.target); })
 })
 
 setInterval(CalculateObp,500)
