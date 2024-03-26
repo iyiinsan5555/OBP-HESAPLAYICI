@@ -258,6 +258,8 @@ function CheckNumber(param) {
     console.log(Ortalama_Baremi.innerHTML)
 }
 
+
+
 function CalculateObpOnButtonClick() {
   totalSum = 0
   CalculateKimya()
@@ -285,3 +287,32 @@ Inputs.forEach(Input =>  {
 })
 
 setInterval(CalculateObp,500)
+
+// Function to save input values to localStorage
+function saveInputValues() {
+  let inputs = document.querySelectorAll('input');
+  inputs.forEach(function(input, index) {
+      localStorage.setItem('input_' + index, input.value);
+      console.log("input", index, " = ", input.value)
+  });
+}
+
+// Function to load input values from localStorage
+function loadInputValues() {
+  let inputs = document.querySelectorAll('input');
+  inputs.forEach(function(input, index) {
+      let storedValue = localStorage.getItem('input_' + index);
+      if (storedValue) {
+          input.value = storedValue;
+      }
+  });
+}
+
+// Call loadInputValues() when the page loads to populate input fields with stored values
+window.addEventListener('load', loadInputValues);
+
+// Call saveInputValues() whenever an input field changes to update localStorage with new values
+Inputs.forEach(Input =>  {
+  Input.addEventListener('change', saveInputValues);
+});
+
